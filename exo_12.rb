@@ -1,3 +1,5 @@
+# idem sans le calendrier
+
 def age_input
   puts "Entre ton âge (stp)"
   print "> "

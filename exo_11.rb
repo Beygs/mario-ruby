@@ -1,3 +1,5 @@
+# Même chose que l'exo d'avant avec le texte qui change
+
 require 'json'
 
 def birth_year

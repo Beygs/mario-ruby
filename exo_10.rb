@@ -1,3 +1,5 @@
+# Ici dans l'ensemble c'est la même chose que l'exo d'avant, j'ai juste ajouté une progress bar qui donne l'âge de l'utilisateur, qui est construite sur le même principe que dans l'exo 7
+
 require 'json'
 
 def birth_year

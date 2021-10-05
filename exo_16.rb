@@ -1,3 +1,5 @@
+# exo 15 et pyramid combinés !
+
 def ask_number
   puts "Combien d'étages veux-tu ?"
   print "> "
@@ -34,7 +36,7 @@ system "clear"
 pyramid = []
 
 for i in 1..floors
-  pyramid << (char * i).rjust(floors, " ") + (char * (i - 1))
+  pyramid << (char * i).rjust(floors, " ") + (char * (i - 1)) # chars * (i - 1) permet d'avoir toujours une chaine de caractères avec un nombre impair de caractères (pour faire la pointe ;))
 end
 
 puts pyramid

@@ -18,7 +18,7 @@ def ask_char
   char = gets.chomp
   
   begin
-    raise StandardError.new if char.length != 1
+    raise StandardError.new if char.length != 1 || char == " "
     return char
   rescue
     puts "\e[31mN'entres qu'un seul caractère stp\e[0m"
@@ -34,7 +34,7 @@ system "clear"
 pyramid = []
 
 for i in 1..floors
-  pyramid << (char * i).rjust(floors, " ")
+  pyramid << (char * i).rjust(floors, " ") # j'ajoute des espaces pour que ma chaîne de caractère fasse toujours la même taille
 end
 
 puts pyramid

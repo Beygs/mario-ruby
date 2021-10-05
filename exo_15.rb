@@ -18,7 +18,7 @@ def ask_char
   char = gets.chomp
   
   begin
-    raise StandardError.new if char.length != 1
+    raise StandardError.new if char.length != 1 || char == " " # erreur si l'utilisateur entre plusieurs caractères (ou aucun), ou s'il entre un espace
     return char
   rescue
     puts "\e[31mN'entres qu'un seul caractère stp\e[0m"
