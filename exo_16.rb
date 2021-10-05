@@ -20,7 +20,7 @@ def ask_char
   char = gets.chomp
   
   begin
-    raise StandardError.new if char.length != 1
+    raise StandardError.new if char.length != 1 || char == " "
     return char
   rescue
     puts "\e[31mN'entres qu'un seul caractère stp\e[0m"
