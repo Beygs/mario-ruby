@@ -4,9 +4,11 @@ def ask_number
   floors = gets.chomp
 
   begin
-    return floors = Integer(floors)
-  rescue 
-    puts "\e[31m#{floors} n'est pas un nombre !\e[0m"
+    floors = Integer(floors)
+    raise StandardError(range) if floors < 1 || floors > 25
+    return floors
+  rescue
+    puts "\e[31m#{floors} n'est pas un nombre valide !\e[0m"
     ask_number
   end
 end
